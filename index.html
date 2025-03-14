@@ -32,6 +32,16 @@
     </style>
 </head>
 <body>
+    <script>
+        function adjustFontSize() {
+            const body = document.body;
+            const width = body.offsetWidth;
+            const fontSize = width / 50;
+            body.style.fontSize = `${fontSize}px`;
+        }
+        window.addEventListener('load', adjustFontSize);
+        window.addEventListener('resize', adjustFontSize);
+    </script>
     <h1>个人简历</h1>
     
     <div class="section">
