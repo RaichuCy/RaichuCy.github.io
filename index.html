@@ -35,7 +35,7 @@
     <script>
         function adjustFontSize() {
             const body = document.body;
-            const width = body.offsetWidth;
+            const width = body.clientWidth;
             const fontSize = width / 50;
             body.style.fontSize = `${fontSize}px`;
         }
